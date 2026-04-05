@@ -187,17 +187,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (langToggle && langDropdown) {
         langToggle.addEventListener('click', (e) => {
             e.stopPropagation();
-            langDropdown.classList.toggle('open');
-        });
-        document.addEventListener('click', () => {
+            const lang = link.getAttribute('data-lang');
+            if (lang === 'en') {
+                window.location.href = 'index.html';
+            } else if (lang === 'ar') {
+                window.location.href = 'index_ar.html';
+            }
             langDropdown.classList.remove('open');
-        });
-        document.querySelectorAll('#langDropdown a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert(`Language switched to ${link.innerText} (demo)`);
-                langDropdown.classList.remove('open');
-            });
         });
     }
 
