@@ -412,30 +412,5 @@
 </button>
 
 <script src="script.js"></script>
-<script>
-  // إضافة بيانات الشرائح بالعربية لتجاوز المحتوى الإنجليزي
-  if (typeof window !== 'undefined') {
-    setTimeout(() => {
-      if (window.heroSlides && Array.isArray(window.heroSlides)) {
-        const arabicHeroSlides = [
-          { image: 'images/hero_image1.jpg', title: 'ترحيب عالمي', subtitle: 'انضم إلى الاحتفال' },
-          { image: 'images/hero_image2.jpg', title: 'ثقافات متنوعة', subtitle: 'اكتشف التقاليد' },
-          { image: 'images/hero_image3.jpg', title: 'ترفيه حي', subtitle: 'عروض لا تنسى' }
-        ];
-        window.heroSlides = arabicHeroSlides;
-        if (typeof initHeroSlides === 'function') initHeroSlides();
-      }
-      if (window.highlightSlides && Array.isArray(window.highlightSlides)) {
-        const arabicHighlights = [
-          { image: 'images/global-carnival.jpg', title: 'أجواء احتفالية', description: 'احتفالات نابضة بالحياة' },
-          { image: 'images/diversity.jpg', title: 'تنوع ثقافي', description: 'تمثيل ثقافات العالم' },
-          { image: 'images/live_event.jpg', title: 'ترفيه مباشر', description: 'عروض ديناميكية' }
-        ];
-        window.highlightSlides = arabicHighlights;
-        if (typeof initHighlightsCarousel === 'function') initHighlightsCarousel();
-      }
-    }, 100);
-  }
-</script>
 </body>
 </html>
