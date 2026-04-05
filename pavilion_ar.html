@@ -1,19 +1,67 @@
-<!-- pavilion_ar.html -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>الكرنفال العالمي جدة - الأجنحة</title>
+  <title>الكرنفال العالمي جدة - العالم في مكان واحد</title>
+  <!-- Google Fonts + Tailwind + Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm"><div class="container mx-auto px-4"><div class="flex items-center justify-between h-16 lg:h-20"><a href="index_ar.html"><img class="w-40 h-8 lg:w-52 lg:h-10 object-contain" src="images/image_1.png"></a><nav class="hidden lg:flex items-center space-x-8 space-x-reverse"><a class="hover:text-blue-600" href="about_ar.html">عن الكرنفال</a><a class="hover:text-blue-600" href="overview_ar.html">نظرة عامة</a><a class="hover:text-blue-600" href="pavilion_ar.html">الأجنحة</a><a class="hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a></nav><div class="flex items-center space-x-4"><div class="relative"><button id="langToggleBtn" class="flex items-center space-x-1 px-3 py-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span class="text-sm">EN</span></button><div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg hidden"><a href="#" data-lang="en">English</a><a href="#" data-lang="ar">العربية</a></div></div><a href="contactSection_ar.html"><span class="hidden sm:inline-flex"><span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px]"><span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span><span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white">اتصل بنا</span></span></span></a><button id="mobileMenuBtn" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg></button></div></div></div></header>
-<div id="mobileNav" class="fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6 hidden"><button id="closeMobileNav" class="absolute top-4 right-4"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg></button><a href="about_ar.html">عن الكرنفال</a><a href="overview_ar.html">نظرة عامة</a><a href="pavilion_ar.html">الأجنحة</a><a href="contactSection_ar.html">اتصل بنا</a></div>
+<!-- ==================== HEADER ==================== -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a class="flex items-center space-x-2 space-x-reverse" href="index_ar.html">
+        <img alt="شعار الكرنفال العالمي جدة" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8 space-x-reverse">
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="about_ar.html">عن الكرنفال</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="overview_ar.html">نظرة عامة</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="pavilion_ar.html">الأجنحة</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="contactSection_ar.html">اتصل بنا</a>
+      </nav>
+      <div class="flex items-center space-x-4 space-x-reverse">
+        <div class="relative text-black">
+          <button id="langToggleBtn" aria-label="تبديل اللغة" class="flex items-center space-x-1 space-x-reverse px-3 py-2 rounded-md hover:bg-gray-100 transition-colors">
+            <svg class="lucide lucide-globe w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="text-sm font-medium">EN</span>
+            <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+          </div>
+        </div>
+        <a href="contactSection_ar.html">
+          <span class="hidden sm:inline-flex">
+            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">اتصل بنا</span>
+            </span>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" aria-label="تبديل القائمة" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+  <a class="text-lg font-medium hover:text-blue-600" href="about_ar.html">عن الكرنفال</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="overview_ar.html">نظرة عامة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="pavilion_ar.html">الأجنحة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
+</div>
 
 <main class="pt-16 lg:pt-20">
   <section class="relative py-32 text-white overflow-hidden"><div class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/og-image.jpg')"></div></section>
@@ -29,8 +77,27 @@
   </div></div></section>
 </main>
 
-<footer class="relative overflow-hidden bg-gray-100 py-10"><div class="container mx-auto px-4 relative z-10"><div class="flex flex-col items-center gap-6 text-center"><div class="flex flex-col md:flex-row items-center gap-3"><span class="text-gray-700">تنظيم</span><a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-4"><img src="images/image.png" class="h-20"><img src="images/RTOSH.png" class="h-20"></a></div></div></div></footer>
-<button id="floatingContactBtn" class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg><span class="hidden sm:inline">اتصل بنا</span></button>
+<!-- FOOTER -->
+<footer>
+  <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-col items-center text-center">
+        <span class="text-gray-700 mb-2">تنظيم</span>
+        <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-4">
+          <img src="images/image.png" class="h-20 object-contain" alt="منظم 1">
+          <img src="images/RTOSH.png" class="h-20 object-contain" alt="منظم 2">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="floatingContactBtn" class="fixed bottom-6 left-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+  </svg>
+  <span class="hidden sm:inline">اتصل بنا</span>
+</button>
+
 <script src="script.js"></script>
 </body>
 </html>
