@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Global Carnival Jeddah - World in One Place</title>
+  <!-- Google Fonts + Tailwind + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
+
+<!-- ==================== HEADER ==================== -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a class="flex items-center space-x-2" href="index.html">
+        <img alt="Global Carnival Jeddah Logo" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="about.html">About</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="overview.html">Overview</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="pavilion.html">Pavilion</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="contactSection.html">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <div class="relative text-black">
+          <button id="langToggleBtn" aria-label="Toggle language" class="flex items-center space-x-1 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors">
+            <svg class="lucide lucide-globe w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="text-sm font-medium">EN</span>
+            <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+          </div>
+        </div>
+        <a href="contactSection.html">
+          <span class="hidden sm:inline-flex">
+            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">Contact Us</span>
+            </span>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" aria-label="Toggle mobile menu" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+  <a class="text-lg font-medium hover:text-blue-600" href="#about.html">About</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="overview.html">Overview</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="pavilion.html">Pavilion</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="contactSection.html">Contact</a>
+</div>
+
+
+  <main class="pt-16 lg:pt-20">
+    <!-- Hero Section with Video Background -->
+    <section class="relative py-32 text-white overflow-hidden">
+      <video class="absolute inset-0 w-full h-full object-cover" src="media/allpavillion.mp4" autoplay loop muted playsinline></video>
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up">Experience Pavilions from Around the World</h1>
+        <p class="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto animate-fade-up" style="animation-delay: 0.1s;">Each pavilion represents the authentic culture and traditions of its region, offering visitors a truly immersive experience.</p>
+      </div>
+    </section>
+
+    <!-- Pavilions Grid -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-40">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 width:">
+          
+          <!-- India & Pakistan -->
+          <div class="rounded-lg border bg-white shadow-sm h-full overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer animate-fade-up">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/india-pakistan-shop-main.jpg" alt="India & Pakistan pavilion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300?text=India+%26+Pakistan'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-lg font-bold text-white">India & Pakistan</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">Traditional textiles, spices, handicrafts, rich fabrics, and cultural artifacts from the subcontinent</p>
+              <button onclick="alert('Gallery coming soon – stay tuned!')" class="inline-flex items-center justify-center rounded-md font-medium transition-colors border border-gray-300 bg-white hover:bg-primary hover:text-white w-full py-2 text-sm">View Gallery</button>
+            </div>
+          </div>
+
+          <!-- Turkey & Morocco -->
+          <div class="rounded-lg border bg-white shadow-sm h-full overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer animate-fade-up" style="animation-delay: 0.05s;">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/TURKEY.jpg" alt="Turkey & Morocco pavilion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300?text=Turkey+%26+Morocco'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-lg font-bold text-white">Turkey & Morocco</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">Ottoman-inspired crafts, ceramics, traditional textiles, Berber crafts, leather goods, and cultural artifacts</p>
+              <button onclick="alert('Gallery coming soon – stay tuned!')" class="inline-flex items-center justify-center rounded-md font-medium transition-colors border border-gray-300 bg-white hover:bg-primary hover:text-white w-full py-2 text-sm">View Gallery</button>
+            </div>
+          </div>
+
+          <!-- East Asia -->
+          <div class="rounded-lg border bg-white shadow-sm h-full overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer animate-fade-up" style="animation-delay: 0.1s;">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/EastAsia.jpg" alt="East Asia pavilion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300?text=East+Asia'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-lg font-bold text-white">East Asia</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">Silk, porcelain, and traditional arts from China, Japan, and Korea</p>
+              <button onclick="alert('Gallery coming soon – stay tuned!')" class="inline-flex items-center justify-center rounded-md font-medium transition-colors border border-gray-300 bg-white hover:bg-primary hover:text-white w-full py-2 text-sm">View Gallery</button>
+            </div>
+          </div>
+
+          <!-- GCC -->
+          <div class="rounded-lg border bg-white shadow-sm h-full overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer animate-fade-up" style="animation-delay: 0.15s;">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/GCC.jpg" alt="GCC pavilion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300?text=GCC'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-lg font-bold text-white">GCC</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">Arabian heritage crafts, dates, and traditional goods</p>
+              <button onclick="alert('Gallery coming soon – stay tuned!')" class="inline-flex items-center justify-center rounded-md font-medium transition-colors border border-gray-300 bg-white hover:bg-primary hover:text-white w-full py-2 text-sm">View Gallery</button>
+            </div>
+          </div>
+
+          <!-- Egypt -->
+          <div class="rounded-lg border bg-white shadow-sm h-full overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer animate-fade-up" style="animation-delay: 0.2s;">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/EGYPT.jpg" alt="Egypt pavilion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300?text=Egypt'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-lg font-bold text-white">Egypt</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">Ancient artifacts, papyrus, and traditional Egyptian crafts</p>
+              <button onclick="alert('Gallery coming soon – stay tuned!')" class="inline-flex items-center justify-center rounded-md font-medium transition-colors border border-gray-300 bg-white hover:bg-primary hover:text-white w-full py-2 text-sm">View Gallery</button>
+            </div>
+          </div>
+
+          <!-- Africa -->
+          <div class="rounded-lg border bg-white shadow-sm h-full overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer animate-fade-up" style="animation-delay: 0.25s;">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/AFRICA.jpg" alt="Africa pavilion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300?text=Africa'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-lg font-bold text-white">Africa</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">Tribal art, traditional fabrics, and cultural artifacts</p>
+              <button onclick="alert('Gallery coming soon – stay tuned!')" class="inline-flex items-center justify-center rounded-md font-medium transition-colors border border-gray-300 bg-white hover:bg-primary hover:text-white w-full py-2 text-sm">View Gallery</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<!-- FOOTER with Newsletter -->
+<footer>
+  <div class="container mx-auto px-4">
+    <br>
+<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+  <span>All rights reserved © Global Carnival Jeddah, 2025.</span>
+  <div class="flex items-center gap-3">
+    <span>Organized by</span>
+    <br>
+    <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-2">
+      <img src="images/image.png" class="h-20">
+      <img src="images/RTOSH.png" class="h-20">
+    </a>
+  </div>
+</div>
+<br>
+  </div>
+</footer>
+
+<button id="floatingContactBtn" class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+  </svg>
+  <span class="hidden sm:inline">Contact Us</span>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
