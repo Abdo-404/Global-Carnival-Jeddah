@@ -182,24 +182,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ---------- 5. LANGUAGE DROPDOWN ----------
-    const langToggle = document.getElementById('langToggleBtn');
-    const langDropdown = document.getElementById('langDropdown');
-    if (langToggle && langDropdown) {
-        langToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            langDropdown.classList.toggle('open');
-        });
-        document.addEventListener('click', () => {
+    document.querySelectorAll('#langDropdown a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+    
+            const lang = link.getAttribute('data-lang');
+    
+            if (lang === 'English') {
+                window.location.href = 'index.html';
+            } else if (lang === 'العربية') {
+                window.location.href = 'index_ar.html';
+            }
+    
             langDropdown.classList.remove('open');
         });
-        document.querySelectorAll('#langDropdown a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert(`Language switched to ${link.innerText} (demo)`);
-                langDropdown.classList.remove('open');
-            });
-        });
-    }
+    });
 
     // ---------- 6. STICKY HEADER ----------
     const header = document.getElementById('mainHeader');
