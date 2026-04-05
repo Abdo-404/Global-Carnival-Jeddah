@@ -185,24 +185,27 @@
 
 
 <!-- FOOTER with Newsletter -->
-<footer>
-<div class="inset-0 flex justify-center items-center">
-    <div class="w-[600px] h-[600px] bg-sky-400 rounded-full blur-3xl opacity-50"></div>
+<footer class="relative overflow-hidden bg-gray-100 py-10">
+  <!-- Background glow -->
+  <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+    <div class="w-[500px] h-[500px] bg-sky-400 rounded-full blur-3xl opacity-30"></div>
   </div>
-  <div class="container mx-auto px-4 relative z-10 text-center">
-    <br>
-<div class="flex flex-col md:flex-row items-center justify-between gap-4">
-  <span>All rights reserved © Global Carnival Jeddah, 2025.</span>
-  <div class="flex items-center gap-3">
-    <span>Organized by</span>
-    <br>
-    <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-2">
-      <img src="images/image.png" class="h-20">
-      <img src="images/RTOSH.png" class="h-20">
-    </a>
-  </div>
-</div>
-<br>
+  <!-- Content -->
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <!-- Left -->
+      <span class="text-gray-700 text-sm">
+        All rights reserved © Global Carnival Jeddah, 2025.
+      </span>
+      <!-- Right -->
+      <div class="flex flex-col md:flex-row items-center gap-3">
+        <span class="text-gray-700 text-sm">Organized by</span>
+        <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-4">
+          <img src="images/image.png" class="h-12 object-contain">
+          <img src="images/RTOSH.png" class="h-12 object-contain">
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
 
