@@ -195,6 +195,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             langDropdown.classList.remove('open');
         });
+        document.addEventListener('click', () => {
+            langDropdown.classList.remove('open');
+        });
+        document.querySelectorAll('#langDropdown a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert(`Language switched to ${link.innerText} (demo)`);
+                langDropdown.classList.remove('open');
+            });
+        });
     }
 
     // ---------- 6. STICKY HEADER ----------
