@@ -223,11 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const floatingBtn = document.getElementById('floatingContactBtn');
     if (floatingBtn) {
         floatingBtn.addEventListener('click', () => {
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                window.location.href = 'contactSectino.html';
-            }
+            window.location.href = 'contactSectino.html';
         });
     }
 
