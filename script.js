@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ---------- 5. LANGUAGE DROPDOWN ----------
-    document.querySelectorAll('#langDropdown a').forEach(link => {
+    document.querySelectorAll('#langDropdown').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
     
