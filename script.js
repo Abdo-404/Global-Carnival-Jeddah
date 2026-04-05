@@ -223,11 +223,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const floatingBtn = document.getElementById('floatingContactBtn');
     if (floatingBtn) {
         floatingBtn.addEventListener('click', () => {
-            const contactSection = document.querySelector('.bg-gradient-to-br.from-gray-50.to-blue-50');
             if (contactSection) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
             } else {
-                window.location.href = '/en/contact';
+                window.location.href = 'contactSectino.html';
             }
         });
     }
