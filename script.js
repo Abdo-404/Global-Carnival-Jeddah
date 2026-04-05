@@ -187,13 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (langToggle && langDropdown) {
         langToggle.addEventListener('click', (e) => {
             e.stopPropagation();
-            const lang = link.getAttribute('data-lang');
-            if (lang === 'en') {
-                window.location.href = 'index.html';
-            } else if (lang === 'ar') {
-                window.location.href = 'index_ar.html';
-            }
-            langDropdown.classList.remove('open');
+            langDropdown.classList.toggle('open');
         });
         document.addEventListener('click', () => {
             langDropdown.classList.remove('open');
@@ -201,12 +195,15 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('#langDropdown a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                alert(`Language switched to ${link.innerText} (demo)`);
-                langDropdown.classList.remove('open');
+                const lang = link.getAttribute('data-lang');
+                if (lang === 'en') {
+                    window.location.href = 'index.html';
+                } else if (lang === 'ar') {
+                    window.location.href = 'index_ar.html';
+                }
             });
         });
     }
-
     // ---------- 6. STICKY HEADER ----------
     const header = document.getElementById('mainHeader');
     window.addEventListener('scroll', () => {
