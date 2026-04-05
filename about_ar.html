@@ -1,0 +1,115 @@
+<!-- about_ar.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>الكرنفال العالمي جدة - العالم في مكان واحد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
+
+<!-- HEADER (نفس الهيكل مع روابط _ar) -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a class="flex items-center space-x-2 space-x-reverse" href="index_ar.html">
+        <img alt="شعار الكرنفال العالمي جدة" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8 space-x-reverse">
+        <a class="text-base font-medium hover:text-blue-600 text-black" href="about_ar.html">عن الكرنفال</a>
+        <a class="text-base font-medium hover:text-blue-600 text-black" href="overview_ar.html">نظرة عامة</a>
+        <a class="text-base font-medium hover:text-blue-600 text-black" href="pavilion_ar.html">الأجنحة</a>
+        <a class="text-base font-medium hover:text-blue-600 text-black" href="contactSection_ar.html">اتصل بنا</a>
+      </nav>
+      <div class="flex items-center space-x-4 space-x-reverse">
+        <div class="relative text-black">
+          <button id="langToggleBtn" class="flex items-center space-x-1 px-3 py-2 rounded-md hover:bg-gray-100">
+            <svg class="lucide lucide-globe w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="text-sm font-medium">EN</span>
+            <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+          </div>
+        </div>
+        <a href="contactSection_ar.html">
+          <span class="hidden sm:inline-flex">
+            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">اتصل بنا</span>
+            </span>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-md hover:bg-gray-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+  <a class="text-lg font-medium hover:text-blue-600" href="about_ar.html">عن الكرنفال</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="overview_ar.html">نظرة عامة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="pavilion_ar.html">الأجنحة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
+</div>
+
+<main class="pt-16 lg:pt-20">
+  <section class="relative py-32 text-white">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image:url('images/hero_image3.jpg')"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up">عن الكرنفال العالمي جدة</h1>
+      <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 space-x-reverse text-lg md:text-xl">
+        <div class="flex items-center space-x-2 space-x-reverse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg><span>٢٣ أكتوبر ٢٠٢٥ → ٩ أبريل ٢٠٢٦</span></div>
+        <div class="flex items-center space-x-2 space-x-reverse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>كرنفال جدة، بجوار عزيز مول، جدة</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-fade-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">مرحباً بكم في الكرنفال العالمي جدة</h2>
+          <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>الكرنفال العالمي جدة هو حدث ثقافي استثنائي يجمع أعرق التقاليد والنكهات والتجارب من جميع أنحاء العالم في قلب المملكة العربية السعودية. يمثل هذا الحدث الاستثنائي مزيجاً من الثقافات العالمية، مما يخلق بيئة غامرة يمكن للزوار من خلالها استكشاف وتذوق وتجربة ثراء عالمنا المتنوع.</p>
+            <p>كرنفالنا هو أكثر من مجرد حدث - إنه احتفال بالإبداع البشري والتراث الثقافي والوحدة العالمية. من خلال واجهات مصممة بدقة، وأجنحة أصلية، وأجنحة ثقافية، وتجارب تفاعلية، نبني جسراً بين الثقافات المختلفة، مما يعزز التفاهم والتقدير لتنوع العالم.</p>
+            <p>من الأسواق النابضة بالحياة في مراكش إلى الحدائق الهادئة في كيوتو، ومن شوارع مومباي الصاخبة إلى شوارع باريس الأنيقة، يقدم الكرنفال العالمي جدة رحلة فريدة حول العالم دون مغادرة شبه الجزيرة العربية.</p>
+          </div>
+        </div>
+        <div class="relative animate-fade-right">
+          <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <img src="images/image_1.jpg" alt="الكرنفال العالمي جدة احتفال ثقافي" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">ما الذي يجعلنا مميزين</h2><p class="text-lg text-gray-600 max-w-3xl mx-auto">اكتشف العناصر الفريدة التي تجعل الكرنفال العالمي جدة تجربة ثقافية استثنائية</p></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden"><div class="relative h-48"><img src="images/image.jpg" class="w-full h-full object-cover"><div class="absolute inset-0 bg-black/20"></div><div class="absolute top-4 right-4 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div></div><div class="p-6"><h3 class="text-xl font-bold text-gray-900 mb-4">التنوع الثقافي العالمي</h3><p class="text-gray-600">استمتع بتمثيلات أصلية لثقافات من كل قارة، تم تنظيم كل منها بعناية للحفاظ على تقاليدها وتراثها الفريد.</p></div></div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden"><div class="relative h-48"><img src="images/image_2.jpg" class="w-full h-full object-cover"><div class="absolute inset-0 bg-black/20"></div><div class="absolute top-4 right-4 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div></div><div class="p-6"><h3 class="text-xl font-bold text-gray-900 mb-4">تجارب تفاعلية</h3><p class="text-gray-600">تفاعل مع سفراء الثقافة، وشارك في الأنشطة التقليدية، واصنع ذكريات دائمة من خلال التجارب العملية.</p></div></div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden"><div class="relative h-48"><img src="images/image_3.jpg" class="w-full h-full object-cover"><div class="absolute inset-0 bg-black/20"></div><div class="absolute top-4 right-4 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div></div><div class="p-6"><h3 class="text-xl font-bold text-gray-900 mb-4">موقع استراتيجي</h3><p class="text-gray-600">يقع في مدينة جدة النابضة بالحياة، بوابة الشرق الأوسط، مما يجعله في متناول الزوار من جميع أنحاء العالم.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container mx-auto px-4 py-6"><div class="flex flex-col items-center text-center"><span class="text-gray-700 mb-2">تنظيم</span><a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-4"><img src="images/image.png" class="h-20 object-contain"><img src="images/RTOSH.png" class="h-20 object-contain"></a></div></div></footer>
+<button id="floatingContactBtn" class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg><span class="hidden sm:inline">اتصل بنا</span></button>
+<script src="script.js"></script>
+</body>
+</html>

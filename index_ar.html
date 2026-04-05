@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>الكرنفال العالمي جدة - العالم في مكان واحد</title>
+  <!-- Google Fonts + Tailwind + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <style>
+    /* ضبط بسيط للاتجاه RTL */
+    body {
+      font-family: 'Oswald', system-ui, sans-serif;
+    }
+    [dir="rtl"] .flex-row {
+      flex-direction: row-reverse;
+    }
+    .lang-dropdown {
+      text-align: right;
+    }
+  </style>
+</head>
+<body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
+
+<!-- ==================== HEADER ==================== -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a class="flex items-center space-x-2 space-x-reverse" href="index_ar.html">
+        <img alt="شعار الكرنفال العالمي جدة" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8 space-x-reverse">
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="about_ar.html">عن الكرنفال</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="overview_ar.html">نظرة عامة</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="pavilion_ar.html">الأجنحة</a>
+        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="contactSection_ar.html">اتصل بنا</a>
+      </nav>
+      <div class="flex items-center space-x-4 space-x-reverse">
+        <div class="relative text-black">
+          <button id="langToggleBtn" aria-label="تبديل اللغة" class="flex items-center space-x-1 space-x-reverse px-3 py-2 rounded-md hover:bg-gray-100 transition-colors">
+            <svg class="lucide lucide-globe w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="text-sm font-medium">EN</span>
+            <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+          </div>
+        </div>
+        <a href="contactSection_ar.html">
+          <span class="hidden sm:inline-flex">
+            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">اتصل بنا</span>
+            </span>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" aria-label="تبديل القائمة" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+  <a class="text-lg font-medium hover:text-blue-600" href="about_ar.html">عن الكرنفال</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="overview_ar.html">نظرة عامة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="pavilion_ar.html">الأجنحة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
+</div>
+
+<main class="pt-16 lg:pt-20">
+  <!-- HERO SECTION with slideshow -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden" id="heroSection">
+    <div class="absolute inset-0 z-0" id="heroSlidesContainer">
+      <div class="absolute z-10 inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/70 pointer-events-none"></div>
+      <div class="relative w-full h-screen bg-black">
+        <!-- JS injects slides here -->
+      </div>
+      <button id="pauseSlideshowBtn" aria-label="إيقاف العرض" class="absolute left-4 top-4 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 z-20">
+        <svg class="lucide lucide-pause h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="5" height="18" rx="1" x="14" y="3"/><rect width="5" height="18" rx="1" x="5" y="3"/></svg>
+      </button>
+    </div>
+    <div class="relative z-10 container mx-auto px-4 text-center text-white">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight reveal-on-scroll">الكرنفال العالمي جدة</h1>
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-medium mb-6 text-gray-200 reveal-on-scroll">اكتشف العالم في مكان واحد</h2>
+        <div class="mb-8 reveal-on-scroll"><a href="overview_ar.html" class="inline-flex bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition">استكشف الكرنفال</a></div>
+        <div class="flex justify-center mb-8">
+          <div class="space-y-2 backdrop-blur-sm bg-white/20 border border-white/20 rounded-xl px-4 py-3">
+            <div class="flex flex-col items-center space-y-2">
+              <p class="text-gray-200 text-sm">تنظيم</p>
+              <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-2">
+                <img src="images/image.png" class="h-20">
+                <img src="images/RTOSH.png" class="h-20">
+              </a>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-2 text-gray-200">
+              <div class="flex items-center space-x-2 space-x-reverse">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" rx="2" x="3" y="4"/><path d="M3 10h18"/></svg>
+                <span>٢٣ أكتوبر ٢٠٢٥ → ٩ أبريل ٢٠٢٦</span>
+              </div>
+              <span class="hidden md:inline-block w-px h-6 bg-white/30"></span>
+              <div class="flex items-center space-x-2 space-x-reverse">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>كرنفال جدة، بجوار عزيز مول، جدة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ABOUT SECTION -->
+  <section class="py-20 bg-gray-50" id="about">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 reveal-on-scroll">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">عن الكرنفال العالمي جدة</h2>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">حدث ثقافي استثنائي يجمع أعرق التقاليد والنكهات والتجارب من جميع أنحاء العالم في قلب المملكة العربية السعودية.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+        <div class="reveal-on-scroll">
+          <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>الكرنفال العالمي جدة هو أكثر من مجرد حدث، إنه احتفال بالإبداع البشري والتراث الثقافي والوحدة العالمية. من خلال واجهات مصممة بدقة، وأجنحة أصلية، وأجنحة ثقافية، وتجارب تفاعلية، نبني جسراً بين الثقافات المختلفة.</p>
+            <p>من الأسواق النابضة بالحياة في مراكش إلى الحدائق الهادئة في كيوتو، ومن شوارع مومباي الصاخبة إلى شوارع باريس الأنيقة، يقدم الكرنفال العالمي جدة رحلة فريدة حول العالم دون مغادرة شبه الجزيرة العربية.</p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-gray-200">
+            <p class="text-sm text-gray-500 mb-3">تنظيم</p>
+            <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-2">
+              <img src="images/image.png" class="h-20">
+              <img src="images/RTOSH.png" class="h-20">
+            </a>
+          </div>
+        </div>
+        <div class="relative reveal-on-scroll">
+          <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <img class="w-full h-full object-cover" src="images/image_17.jpg" alt="احتفال ثقافي">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal-on-scroll">
+        <a href="about_ar.html" class="inline-flex bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition">اعرف أكثر عنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS CAROUSEL -->
+  <section class="py-20 bg-gradient-to-br from-[#000428] to-[#004e92]" id="overview">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16"><h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 reveal-on-scroll">أبرز معالم الكرنفال</h2><p class="text-lg md:text-xl text-white/60 max-w-3xl mx-auto reveal-on-scroll">اكتشف أبرز المعالم التي تجعل الكرنفال العالمي جدة تجربة استثنائية.</p></div>
+      <div class="relative max-w-4xl mx-auto" id="highlightsCarousel">
+        <div class="relative h-96 md:h-[500px] overflow-hidden rounded-2xl shadow-2xl" id="highlightSlidesWrapper"></div>
+        <button id="prevHighlight" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg"><svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
+        <button id="nextHighlight" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg"><svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2" id="highlightDots"></div>
+      </div>
+      <div class="text-center mt-12"><a href="#partner" class="inline-flex bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition">استكشف جميع المعالم</a></div>
+    </div>
+  </section>
+
+  <!-- Discover Cards -->
+  <section id="discover" class="discover py-20">
+    <div class="section-header fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">اكتشف الكرنفال العالمي جدة</h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mt-2">جرّب ثقافات العالم ونكهاته وتقاليده في وجهة استثنائية واحدة</p>
+    </div>
+    <div class="cards-grid container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div class="card fade-up bg-white rounded-2xl shadow-lg overflow-hidden">
+            <a href="#">
+                <div class="card-img-grid grid grid-cols-2 gap-1">
+                    <img src="images/product.jpg" alt="حرف يدوية تقليدية">
+                    <img src="images/cloth.jpg" alt="منسوجات">
+                    <img src="images/cosmetic.jpg" alt="مستحضرات تجميل">
+                    <img src="images/Handicraft.jpg" alt="مصنوعات يدوية">
+                </div>
+                <div class="card-content p-6">
+                    <h3 class="text-xl font-bold">تنوع المنتجات</h3>
+                    <p class="text-gray-600">من الحرف التقليدية إلى السلع الحديثة، استكشف عالمًا من المنتجات من كل ركن من أركان العالم.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card fade-up bg-white rounded-2xl shadow-lg overflow-hidden">
+            <a href="#">
+                <div class="card-img-grid grid grid-cols-2 gap-1">
+                    <img src="images/food.jpg" alt="أطباق رئيسية">
+                    <img src="images/food0.jpg" alt="مطبخ تقليدي">
+                    <img src="images/drinks.jpg" alt="مشروبات">
+                    <img src="images/food1.jpg" alt="طعام الشارع">
+                </div>
+                <div class="card-content p-6">
+                    <h3 class="text-xl font-bold">الأطعمة والمشروبات</h3>
+                    <p class="text-gray-600">تذوق النكهات الأصيلة من جميع أنحاء العالم، من طعام الشارع إلى تجارب الطعام الراقية.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card fade-up bg-white rounded-2xl shadow-lg overflow-hidden">
+            <a href="#">
+                <div class="card-img-grid grid grid-cols-2 gap-1">
+                    <img src="images/activity.jpg" alt="ورش عمل إبداعية">
+                    <img src="images/activity0.jpg" alt="أنشطة ثقافية">
+                    <img src="images/activity1.jpg" alt="ترفيه على المسرح">
+                    <img src="images/activity2.jpg" alt="مرح تفاعلي">
+                </div>
+                <div class="card-content p-6">
+                    <h3 class="text-xl font-bold">الأنشطة والترفيه</h3>
+                    <p class="text-gray-600">شارك في الأنشطة الثقافية وورش العمل الإبداعية والعروض الحية التي تنبض بالحياة.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- PAVILIONS SECTION -->
+  <section class="py-20" id="pavilion">
+    <div class="container mx-auto px-[5vw]">
+      <div class="text-center mb-16"><h2 class="text-3xl md:text-4xl font-bold mb-4 fade-up">تجربة الأجنحة من جميع أنحاء العالم</h2><p class="text-gray-600 max-w-2xl mx-auto fade-up">يمثل كل جناح الثقافة والتقاليد الأصيلة لمنطقته، مما يوفر للزوار تجربة غامرة حقًا.</p></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg fade-up"><img src="images/INDIA.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 text-white"><h3 class="text-2xl font-bold">الهند وباكستان</h3><p class="text-sm">منسوجات تقليدية، بهارات، حرف يدوية</p><div class="flex gap-2 mt-2"><span class="bg-white/20 px-2 py-0.5 rounded-full text-xs">رائج</span></div><a href="pavilion_ar.html" class="mt-3 inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm hover:bg-white/30 w-fit">استكشف ←</a></div></div>
+        <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg fade-up"><img src="images/TURKEY-MOROCCO.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 text-white"><h3 class="text-2xl font-bold">تركيا والمغرب</h3><p>حرف عثمانية، جلود أمازيغية</p><div class="flex gap-2 mt-2"><span class="bg-white/20 px-2 py-0.5 rounded-full text-xs">جديد</span></div><a href="pavilion_ar.html" class="mt-3 inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm hover:bg-white/30 w-fit">استكشف ←</a></div></div>
+        <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg fade-up"><img src="images/ASIA.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 text-white"><h3 class="text-2xl font-bold">شرق آسيا</h3><p>حرير، بورسلين، فنون تقليدية</p><div class="flex gap-2 mt-2"><span class="bg-white/20 px-2 py-0.5 rounded-full text-xs">مميز</span></div><a href="pavilion_ar.html" class="mt-3 inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm hover:bg-white/30 w-fit">استكشف ←</a></div></div>
+        <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg fade-up"><img src="images/GCC-LEVANT.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 text-white"><h3 class="text-2xl font-bold">دول الخليج</h3><p>حرف تراثية عربية، تمور</p><div class="flex gap-2 mt-2"><span class="bg-white/20 px-2 py-0.5 rounded-full text-xs">رائج</span></div><a href="pavilion_ar.html" class="mt-3 inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm hover:bg-white/30 w-fit">استكشف ←</a></div></div>
+        <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg fade-up"><img src="images/AFRICA-EGYPT.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 text-white"><h3 class="text-2xl font-bold">أفريقيا ومصر</h3><p>أقمشة منسوجة يدوياً، فن قبلي، ورق بردي، بهارات</p><div class="flex gap-2 mt-2"><span class="bg-white/20 px-2 py-0.5 rounded-full text-xs">رائج</span></div><a href="pavilion_ar.html" class="mt-3 inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm hover:bg-white/30 w-fit">استكشف ←</a></div></div>
+      </div>
+      <div class="text-center mt-12"><a href="pavilion_ar.html" class="inline-flex bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition">استكشف جميع الأجنحة</a></div>
+    </div>
+  </section>
+
+  <!-- PARTNERSHIP -->
+  <section id="partner" class="py-20 bg-cover bg-center relative" style="background-image:url('images/hero_image1.jpg')">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">لماذا تتعاون مع الكرنفال العالمي جدة؟</h2>
+        <p class="text-white/80 mt-2">انضم إلينا في صناعة تجربة الكرنفال الأكثر روعة</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white/10 backdrop-blur-sm p-5 rounded-xl text-white text-center">
+          <i class="fas fa-globe text-3xl mb-3"></i>
+          <h3 class="font-bold text-xl">مهرجان مخصص</h3>
+          <p>تجارب مخصصة لعلامتك التجارية</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-5 rounded-xl text-white text-center">
+          <i class="fas fa-landmark text-3xl mb-3"></i>
+          <h3 class="font-bold text-xl">وصول ثقافي</h3>
+          <p>أسواق عالمية متنوعة</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-5 rounded-xl text-white text-center">
+          <i class="fas fa-chalkboard-user text-3xl mb-3"></i>
+          <h3 class="font-bold text-xl">رؤية فريدة</h3>
+          <p>تجربة سعودية عالمية المستوى</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-5 rounded-xl text-white text-center">
+          <i class="fas fa-handshake text-3xl mb-3"></i>
+          <h3 class="font-bold text-xl">من البداية إلى النهاية</h3>
+          <p>من التخطيط إلى التنفيذ</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#discover" class="inline-block bg-white text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100">كن شريكاً →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="contactSection">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">تواصل معنا</h2>
+        <p class="text-gray-600 mt-2 max-w-2xl mx-auto">لديك أسئلة حول الأجنحة أو الشراكة أو التذاكر؟ يسعدنا سماع رأيك.</p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-green-100">
+            <div class="flex items-center gap-4">
+              <i class="fab fa-whatsapp text-4xl text-green-600"></i>
+              <div><h3 class="text-2xl font-bold">دردش عبر واتساب</h3>
+                <p class="text-gray-600">رد فوري خلال ساعات العمل</p>
+              </div>
+            </div>
+            <button id="whatsappBtnFixed" class="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full w-full font-semibold flex items-center justify-center gap-2"><i class="fab fa-whatsapp"></i> ابدأ المحادثة</button></div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg">
+            <div class="lg:col-span-2"><a class="mb-4" href="index_ar.html"><img alt="شعار الكرنفال العالمي جدة" width="150" height="100" decoding="async" class="object-contain mb-4" src="images/image_2.png" srcset="images/image_5.png 1x, images/image_2.png 2x"/></a>
+                    <p class="text-gray-600 mb-6 max-w-md">واجهات، متاجر، أجنحة، وأكشاك للكرنفالات. اختبر ثقافات العالم في وجهة استثنائية واحدة.</p>
+                </div>
+              <div class="mt-4"><iframe class="w-full rounded-xl h-60" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.2967310980894!2d39.198796900000005!3d21.5743375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d100783b5e59%3A0x390c13690b4c7c75!2scarnival%20Jeddah!5e0!3m2!1sen!2sin!4v1756806397206" loading="lazy" style="border:0"></iframe>
+              </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <div>
+                <h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5 text-primary">
+                            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="text-gray-700 text-sm">م-09، مبنى عريبيلا، هور العنز شرق، دبي - الإمارات العربية المتحدة</span>
+                    </div>
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-primary">
+                            <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                        </svg>
+                        <a href="tel:+971503545972" class="text-gray-700 text-sm hover:text-primary transition-colors">أحمد حسن: +971 52 144 4948</a>
+                    </div>
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-primary">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    </svg>
+                    <a href="mailto:info@globalcarnivaljeddah.com" class="text-gray-700 text-sm hover:text-primary transition-colors">info@globalcarnivaljeddah.com</a>
+                </div>
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-5 h-5 text-primary">
+                        <path d="M12 6v6l4 2"></path>
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <span class="text-gray-700 text-sm">٩:٠٠ صباحًا - ٦:٠٠ مساءً</span>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <h4 class="text-sm font-semibold text-gray-900 mb-3">فريق الاتصال</h4>
+                    <div class="space-y-2">
+                        <a href="tel:+971503545972" class="flex items-center space-x-3 space-x-reverse hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-primary">
+                                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                            </svg>
+                            <span class="text-gray-700 text-sm">أنيل: +971 50 354 5972</span>
+                        </a>
+                        <a href="tel:+971502755860" class="flex items-center space-x-3 space-x-reverse hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-primary">
+                                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                            </svg>
+                            <span class="text-gray-700 text-sm">سرينو: +971 50 275 5860</span>
+                        </a>
+                        <a href="tel:+971554137686" class="flex items-center space-x-3 space-x-reverse hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-primary">
+                                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                            </svg>
+                            <span class="text-gray-700 text-sm">هيمانيشو: +971 55 413 7686</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6 rounded-lg mt-4 pt-4 border-t border-gray-200">
+          <div class="flex items-center space-x-2 space-x-reverse mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-5 h-5 text-primary">
+                  <path d="M8 2v4"></path>
+                  <path d="M16 2v4"></path>
+                  <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                  <path d="M3 10h18"></path>
+              </svg>
+              <span class="text-sm font-semibold text-gray-900">تواريخ الفعالية</span>
+          </div>
+          <p class="text-gray-700 text-sm mb-2">٢٣ أكتوبر ٢٠٢٥ → ٩ أبريل ٢٠٢٦</p>
+          <a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" class="flex items-center space-x-2 space-x-reverse hover:underline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 text-primary">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="text-gray-700 text-sm">كرنفال جدة، بجوار عزيز مول، جدة</span>
+          </a>
+        </div>
+        <div class="mb-6 rounded-lg mt-4 pt-4 border-t border-gray-200">
+            <h3 class="text-lg font-semibold mb-4">تابعونا</h3>
+            <div class="flex space-x-4 space-x-reverse">
+                <a href="https://www.facebook.com/profile.php?id=61579708906500" target="_blank" class="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="https://www.instagram.com/global_carnival_jeddah/" target="_blank" class="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCqpbvpvH_b-9-gHRSvEvdqg" target="_blank" class="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-col items-center text-center">
+        <span class="text-gray-700 mb-2">تنظيم</span>
+        <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-4">
+          <img src="images/image.png" class="h-20 object-contain" alt="منظم 1">
+          <img src="images/RTOSH.png" class="h-20 object-contain" alt="منظم 2">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="floatingContactBtn" class="fixed bottom-6 left-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+  </svg>
+  <span class="hidden sm:inline">اتصل بنا</span>
+</button>
+
+<script src="script.js"></script>
+<script>
+  // إضافة بيانات الشرائح بالعربية لتجاوز المحتوى الإنجليزي
+  if (typeof window !== 'undefined') {
+    setTimeout(() => {
+      if (window.heroSlides && Array.isArray(window.heroSlides)) {
+        const arabicHeroSlides = [
+          { image: 'images/hero_image1.jpg', title: 'ترحيب عالمي', subtitle: 'انضم إلى الاحتفال' },
+          { image: 'images/hero_image2.jpg', title: 'ثقافات متنوعة', subtitle: 'اكتشف التقاليد' },
+          { image: 'images/hero_image3.jpg', title: 'ترفيه حي', subtitle: 'عروض لا تنسى' }
+        ];
+        window.heroSlides = arabicHeroSlides;
+        if (typeof initHeroSlides === 'function') initHeroSlides();
+      }
+      if (window.highlightSlides && Array.isArray(window.highlightSlides)) {
+        const arabicHighlights = [
+          { image: 'images/global-carnival.jpg', title: 'أجواء احتفالية', description: 'احتفالات نابضة بالحياة' },
+          { image: 'images/diversity.jpg', title: 'تنوع ثقافي', description: 'تمثيل ثقافات العالم' },
+          { image: 'images/live_event.jpg', title: 'ترفيه مباشر', description: 'عروض ديناميكية' }
+        ];
+        window.highlightSlides = arabicHighlights;
+        if (typeof initHighlightsCarousel === 'function') initHighlightsCarousel();
+      }
+    }, 100);
+  }
+</script>
+</body>
+</html>
