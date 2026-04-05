@@ -184,6 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ---------- 5. LANGUAGE DROPDOWN ----------
     const langToggle = document.getElementById('langToggleBtn');
     const langDropdown = document.getElementById('langDropdown');
+    const lang = link.getAttribute('data-lang');
     if (langToggle && langDropdown) {
         langToggle.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -195,7 +196,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('#langDropdown a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                alert(`Language switched to ${link.innerText} (demo)`);
+                const lang = link.getAttribute('data-lang');
+                if (lang === 'en') {
+                    window.location.href = 'index.html';
+                } else if (lang === 'ar') {
+                    window.location.href = 'index_ar.html';
+                }
                 langDropdown.classList.remove('open');
             });
         });
