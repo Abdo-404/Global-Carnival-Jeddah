@@ -188,9 +188,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
             const lang = link.getAttribute('data-lang');
     
-            if (lang === 'English') {
+            if (lang === 'en') {
                 window.location.href = 'index.html';
-            } else if (lang === 'العربية') {
+            } else if (lang === 'ar') {
                 window.location.href = 'index_ar.html';
             }
     
