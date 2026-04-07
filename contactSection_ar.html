@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>الكرنفال العالمي جدة - العالم في مكان واحد</title>
+  <title>مهرجان ساحة الرضف</title>
   <!-- Google Fonts + Tailwind + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -15,39 +13,31 @@
 <body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
 
 <!-- ==================== HEADER ==================== -->
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm" >
   <div class="container mx-auto px-4">
-    <div class="flex items-center justify-between h-16 lg:h-20">
-      <a class="flex items-center space-x-2 space-x-reverse" href="index_ar.html">
-        <img alt="شعار الكرنفال العالمي جدة" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+    <div class="flex items-center justify-between">
+      <a class="flex" href="index_ar.html">
+        <img alt="شعار مهرجان ساحة الرضف" class="w-40 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_1.png 2x">
       </a>
-      <nav class="hidden lg:flex items-center space-x-8 space-x-reverse">
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="about_ar.html">عن الكرنفال</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="overview_ar.html">نظرة عامة</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="pavilion_ar.html">الأجنحة</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="contactSection_ar.html">اتصل بنا</a>
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="about_ar.html">عن المهرجان</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="overview_ar.html">نظرة عامة</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="pavilion_ar.html">الجناح</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="contactSection_ar.html">اتصل بنا</a>
       </nav>
-      <div class="flex items-center space-x-4 space-x-reverse">
+      <div class="flex items-center space-x-4">
         <div class="relative text-black">
-          <button id="langToggleBtn" aria-label="تبديل اللغة" class="flex items-center space-x-1 space-x-reverse px-3 py-2 rounded-md hover:bg-gray-100 transition-colors">
+          <button id="langToggleBtn" aria-label="تبديل اللغة" class="flex items-center space-x-1 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors">
             <svg class="lucide lucide-globe w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-            <span class="text-sm font-medium">EN</span>
+            <span class="text-sm font-medium">AR</span>
             <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </button>
           <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
-            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm hover:bg-gray-100">العربية</a>
           </div>
         </div>
-        <a href="contactSection_ar.html">
-          <span class="hidden sm:inline-flex">
-            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
-              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">اتصل بنا</span>
-            </span>
-          </span>
-        </a>
-        <button id="mobileMenuBtn" aria-label="تبديل القائمة" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
+        <button id="mobileMenuBtn" aria-label="تبديل القائمة الجانبية" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
         </button>
       </div>
@@ -56,47 +46,182 @@
 </header>
 
 <!-- Mobile Navigation Overlay -->
-<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
-  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
-  <a class="text-lg font-medium hover:text-blue-600" href="about_ar.html">عن الكرنفال</a>
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 w-64 bg-white/80 shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 "><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+  <a class="text-lg font-medium hover:text-blue-600" href="about_ar.html">عن المهرجان</a>
   <a class="text-lg font-medium hover:text-blue-600" href="overview_ar.html">نظرة عامة</a>
-  <a class="text-lg font-medium hover:text-blue-600" href="pavilion_ar.html">الأجنحة</a>
+  <a class="text-lg font-medium hover:text-blue-600" href="pavilion_ar.html">الجناح</a>
   <a class="text-lg font-medium hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
 </div>
+<main class="pt-16 lg:pt-20 animated-gradient">
+    <!-- Hero Section -->
+    <section class="relative py-32 bg-gradient-to-br from-[#000428] to-[#004e92] text-white">
+      <div class="container mx-auto px-4 text-center">
+        <div class="animate-fade-up">
+          <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">تواصل معنا</h1>
+          <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            لديك أسئلة أو ترغب في معرفة المزيد؟ يسعدنا التواصل معك. تواصل معنا وسنرد عليك في أقرب وقت ممكن.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Contact Form & Info -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Left: Contact Form -->
+          <div class="animate-fade-left">
+            <!-- WhatsApp Quick Chat -->
+            <div class="mt-8 p-6 bg-green-50 rounded-lg border border-green-200">
+              <div class="flex items-center space-x-3 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 text-green-600"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+                <h3 class="text-lg font-semibold text-green-800">محادثة سريعة عبر واتساب</h3>
+              </div>
+              <p class="text-green-700 mb-4">هل تفضل الدردشة؟ أرسل لنا رسالة سريعة عبر واتساب وسنرد عليك فوراً.</p>
+              <a href="https://wa.me/971503545972?text=Hello%20Global%20Carnival%2C%20I%20have%20a%20question." target="_blank" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors">الدردشة عبر واتساب</a>
+            </div>
+            
+            <!-- Map -->
+            <div class="mt-8">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">الموقع</h3>
+              <div class="bg-gray-200 rounded-lg overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.0996000245323!2d40.427205836992!3d21.227898678665028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e98efecd5cd645%3A0xd24fb5ad77517e90!2z2YXZhtiq2LLZhyDYp9mE2LHYr9mB!5e0!3m2!1sar!2ssa!4v1775511679056!5m2!1sar!2ssa" width="100%" height="300" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع كرنفال جدة"></iframe>
+              </div>
+            </div>
+          </div>
 
-<main class="pt-16 lg:pt-20">
-  <section class="relative py-32 text-white"><div class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/hero_image2.jpg')"></div><div class="absolute inset-0 bg-black/30"></div><div class="relative container mx-auto px-4 text-center"><h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">اتصل بنا</h1><p class="text-xl md:text-2xl max-w-4xl mx-auto">نحن هنا للإجابة على أسئلتك ومساعدتك في أي استفسار</p></div></section>
+          <!-- Right: Contact Info & Map -->
+          <div class="animate-fade-right">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">تواصل معنا</h2>
+            <div class="space-y-8">
+              <!-- Address -->
+              <div class="flex items-start space-x-4">
+                <div class="text-primary p-3 bg-primary/10 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">العنوان</h3>
+                  <p class="text-gray-600">م-09، مبنى عربيالة، هور العنز شرق، دبي - الإمارات العربية المتحدة</p>
+                </div>
+              </div>
+              <!-- Phone -->
+              <div class="flex items-start space-x-4">
+                <div class="text-primary p-3 bg-primary/10 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">الهاتف</h3>
+                  <a href="tel:+971503545972" class="text-gray-600 hover:text-primary transition-colors">+971 50 354 5972</a>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="flex items-start space-x-4">
+                <div class="text-primary p-3 bg-primary/10 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">البريد الإلكتروني</h3>
+                  <a href="mailto:info@globalcarnivaljeddah.com" class="text-gray-600 hover:text-primary transition-colors">info@globalcarnivaljeddah.com</a>
+                </div>
+              </div>
+              <!-- Hours -->
+              <div class="flex items-start space-x-4">
+                <div class="text-primary p-3 bg-primary/10 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">ساعات العمل</h3>
+                  <p class="text-gray-600">٩:٠٠ ص - ٦:٠٠ م</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50"><div class="container mx-auto px-4"><div class="grid lg:grid-cols-2 gap-12">
-    <div class="space-y-6">
-      <div class="bg-white p-6 rounded-2xl shadow-lg border border-green-100"><div class="flex items-center gap-4"><i class="fab fa-whatsapp text-4xl text-green-600"></i><div><h3 class="text-2xl font-bold">دردش عبر واتساب</h3><p class="text-gray-600">رد فوري خلال ساعات العمل</p></div></div><button id="whatsappBtnFixed" class="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full w-full font-semibold flex items-center justify-center gap-2"><i class="fab fa-whatsapp"></i> ابدأ المحادثة</button></div>
-      <div class="bg-white p-6 rounded-2xl shadow-lg"><div class="mb-4"><img src="images/image_2.png" class="h-16 object-contain"></div><p class="text-gray-600 mb-6">واجهات، متاجر، أجنحة، وأكشاك للكرنفالات. اختبر ثقافات العالم في وجهة استثنائية واحدة.</p><iframe class="w-full rounded-xl h-60" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.2967310980894!2d39.198796900000005!3d21.5743375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d100783b5e59%3A0x390c13690b4c7c75!2scarnival%20Jeddah!5e0!3m2!1sen!2sin!4v1756806397206" loading="lazy" style="border:0"></iframe></div>
-    </div>
-    <div class="bg-white rounded-2xl shadow-xl p-8"><div><h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3><div class="space-y-3"><div class="flex items-center space-x-3 space-x-reverse"><svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span class="text-gray-700 text-sm">م-09، مبنى عريبيلا، هور العنز شرق، دبي - الإمارات العربية المتحدة</span></div><div class="flex items-center space-x-3 space-x-reverse"><svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><a href="tel:+971503545972" class="text-gray-700 text-sm">أحمد حسن: +971 52 144 4948</a></div><div class="flex items-center space-x-3 space-x-reverse"><svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg><a href="mailto:info@globalcarnivaljeddah.com" class="text-gray-700 text-sm">info@globalcarnivaljeddah.com</a></div><div class="flex items-center space-x-3 space-x-reverse"><svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg><span class="text-gray-700 text-sm">٩:٠٠ صباحًا - ٦:٠٠ مساءً</span></div><div class="mt-4 pt-4 border-t"><h4 class="text-sm font-semibold mb-3">فريق الاتصال</h4><div class="space-y-2"><a href="tel:+971503545972" class="flex items-center space-x-3 space-x-reverse"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span class="text-gray-700 text-sm">أنيل: +971 50 354 5972</span></a><a href="tel:+971502755860" class="flex items-center space-x-3 space-x-reverse"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span class="text-gray-700 text-sm">سرينو: +971 50 275 5860</span></a><a href="tel:+971554137686" class="flex items-center space-x-3 space-x-reverse"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span class="text-gray-700 text-sm">هيمانيشو: +971 55 413 7686</span></a></div></div></div><div class="mt-4 pt-4 border-t"><div class="flex items-center space-x-2 mb-2"><svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg><span class="text-sm font-semibold">تواريخ الفعالية</span></div><p class="text-gray-700 text-sm mb-2">٢٣ أكتوبر ٢٠٢٥ → ٩ أبريل ٢٠٢٦</p><a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" class="flex items-center space-x-2 hover:underline"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span class="text-gray-700 text-sm">كرنفال جدة، بجوار عزيز مول، جدة</span></a></div><div class="mt-4 pt-4 border-t"><h3 class="text-lg font-semibold mb-4">تابعونا</h3><div class="flex space-x-4"><a href="https://www.facebook.com/profile.php?id=61579708906500" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-primary"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/global_carnival_jeddah/" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-primary"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/channel/UCqpbvpvH_b-9-gHRSvEvdqg" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-primary"><i class="fab fa-youtube"></i></a></div></div></div></div>
-  </div></div></section>
-</main>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container mx-auto px-4 py-6">
-      <div class="flex flex-col items-center text-center">
-        <span class="text-gray-700 mb-2">تنظيم</span>
-        <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-4">
-          <img src="images/image.png" class="h-20 object-contain" alt="منظم 1">
-          <img src="images/RTOSH.png" class="h-20 object-contain" alt="منظم 2">
-        </a>
+  <!-- FOOTER (matching original design) -->
+  <footer class="text-gray-900 border-t border-gray-200">
+    <div class="container mx-auto px-10 py-6">
+      <div class="grid lg:grid-cols-3 gap-8 items-center justify-items-center">
+        <!-- Brand column -->
+        <div>
+          <a href="index_ar.html" class="inline-block mb-4">
+            <img src="images/image_1.png" alt="شعار مهرجان ساحة الرضف" width="200" class="object-contain" onerror="this.src='https://placehold.co/150x60?text=Global+Carnival'">
+          </a>
+          <p class=" mb-6 max-w-md">واجهات، متاجر، أجنحة، وأكشاك للكرنفالات. اكتشف ثقافات العالم في وجهة استثنائية واحدة.</p>
+          <div class="mb-6">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+              <span class="text-sm font-semibold">تواريخ الفعالية</span>
+            </div>
+            <p class= text-sm mb-2">من 10 مايو 2026 إلى 5 سبتمبر 2026</p>
+            <a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class= text-sm">مهرجان ساحة الرضف، مقابل حديقة الرضف – الطائف، المملكة العربية السعودية</span>
+            </a>
+          </div>
+        </div>
+        <!-- Contact info column -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class= text-sm">م-09، مبنى عربيالة، هور العنز شرق، دبي - الإمارات العربية المتحدة</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+              <a href="tel:+971503545972" class= text-sm hover:text-blue-600">+971 50 354 5972</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              <a href="mailto:info@globalcarnivaljeddah.com" class= text-sm hover:text-blue-600">info@globalcarnivaljeddah.com</a>
+            </div>
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="text-sm font-semibold mb-2">فريق الاتصال</h4>
+              <div class="space-y-1">
+                <a href="tel:+966568929072" class="block text-sm  hover:text-blue-600">Reda Hassan: +966 56 892 9072 / +971 50 336 0709</a>
+                <a href="tel:+966534835185" class="block text-sm  hover:text-blue-600">Hassan Bahy: +966 53 483 5185 / +971 50 796 5776</a>
+                <a href="tel:+966567000322" class="block text-sm  hover:text-blue-600">Ahmad Hassan +966 56 700 0322 / +971 52 144 4948</a>
+                <a href="tel:+971502755860" class="block text-sm  hover:text-blue-600">Srinu +966 56 4055267 / +971 50 2755860</a>
+                <a href="tel:+971554137686" class="block text-sm  hover:text-blue-600">Himanshu: +971 55 413 7686</a>
+                <a href="tel:+971503545972" class="block text-sm  hover:text-blue-600">Anil: +971 50 354 5972</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social & organized by -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">تابعنا</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=61579708906500" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/global_carnival_jeddah/" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-pink-500 hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCqpbvpvH_b-9-gHRSvEvdqg" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+            </a>
+          </div>
+          <br>
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="text-sm font-semibold mb-2">تنظيم</h4>
+              <div class="space-y-1">
+              <a href="https://www.barakatexhibitions.com/" target="_blank" 
+                class="flex items-center gap-4">
+                <img src="images/RTOSH.png" class="h-32 object-contain" alt="RTOSH">
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<button id="floatingContactBtn" class="fixed bottom-6 left-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2">
-  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
-  </svg>
-  <span class="hidden sm:inline">اتصل بنا</span>
-</button>
+  </footer>
 
 <script src="script.js"></script>
 </body>

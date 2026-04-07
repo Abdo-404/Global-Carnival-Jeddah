@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Global Carnival Jeddah - World in One Place</title>
+  <title>Al Ruddaf Square Festival</title>
   <!-- Google Fonts + Tailwind + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -14,17 +13,17 @@
 <body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
 
 <!-- ==================== HEADER ==================== -->
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm" >
   <div class="container mx-auto px-4">
-    <div class="flex items-center justify-between h-16 lg:h-20">
-      <a class="flex items-center space-x-2" href="index.html">
-        <img alt="Global Carnival Jeddah Logo" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+    <div class="flex items-center justify-between">
+      <a class="flex" href="index.html">
+        <img alt="Al Ruddaf Square Festival Logo" class="w-40 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_1.png 2x">
       </a>
       <nav class="hidden lg:flex items-center space-x-8">
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="about.html">About</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="overview.html">Overview</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="pavilion.html">Pavilion</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="contactSection.html">Contact</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="about.html">About</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="overview.html">Overview</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="pavilion.html">Pavilion</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="contactSection.html">Contact</a>
       </nav>
       <div class="flex items-center space-x-4">
         <div class="relative text-black">
@@ -34,18 +33,10 @@
             <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </button>
           <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
-            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm hover:bg-gray-100">العربية</a>
           </div>
         </div>
-        <a href="contactSection.html">
-          <span class="hidden sm:inline-flex">
-            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
-              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">Contact Us</span>
-            </span>
-          </span>
-        </a>
         <button id="mobileMenuBtn" aria-label="Toggle mobile menu" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
         </button>
@@ -55,15 +46,14 @@
 </header>
 
 <!-- Mobile Navigation Overlay -->
-<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
-  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 w-64 bg-white/80 shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 "><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
   <a class="text-lg font-medium hover:text-blue-600" href="about.html">About</a>
   <a class="text-lg font-medium hover:text-blue-600" href="overview.html">Overview</a>
   <a class="text-lg font-medium hover:text-blue-600" href="pavilion.html">Pavilion</a>
   <a class="text-lg font-medium hover:text-blue-600" href="contactSection.html">Contact</a>
 </div>
-
-  <main class="pt-16 lg:pt-20">
+<main class="pt-16 lg:pt-20 animated-gradient">
     <!-- Hero Section -->
     <section class="relative py-32 bg-gradient-to-br from-[#000428] to-[#004e92] text-white">
       <div class="container mx-auto px-4 text-center">
@@ -96,7 +86,7 @@
             <div class="mt-8">
               <h3 class="text-lg font-semibold text-gray-900 mb-4">Location</h3>
               <div class="bg-gray-200 rounded-lg overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.2967310980894!2d39.198796900000005!3d21.5743375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d100783b5e59%3A0x390c13690b4c7c75!2scarnival%20Jeddah!5e0!3m2!1sen!2sin!4v1756806397206!5m2!1sen!2sin" width="100%" height="300" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carnival Jeddah Location"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.0996000245323!2d40.427205836992!3d21.227898678665028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e98efecd5cd645%3A0xd24fb5ad77517e90!2z2YXZhtiq2LLZhyDYp9mE2LHYr9mB!5e0!3m2!1sar!2ssa!4v1775511679056!5m2!1sar!2ssa" width="100%" height="300" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carnival Jeddah Location"></iframe>
               </div>
             </div>
           </div>
@@ -153,24 +143,24 @@
   </main>
 
   <!-- FOOTER (matching original design) -->
-  <footer class="bg-gray-50 text-gray-900 border-t border-gray-200">
-    <div class="container mx-auto px-4 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <footer class="text-gray-900 border-t border-gray-200">
+    <div class="container mx-auto px-10 py-6">
+      <div class="grid lg:grid-cols-3 gap-8 items-center justify-items-center">
         <!-- Brand column -->
-        <div class="lg:col-span-2">
-          <a href="/en" class="inline-block mb-4">
-            <img src="images/image_1.png" alt="Global Carnival Jeddah Logo" width="150" height="60" class="object-contain" onerror="this.src='https://placehold.co/150x60?text=Global+Carnival'">
+        <div>
+          <a href="index.html" class="inline-block mb-4">
+            <img src="images/image_1.png" alt="Al Ruddaf Square Festival Logo" width="200" class="object-contain" onerror="this.src='https://placehold.co/150x60?text=Global+Carnival'">
           </a>
-          <p class="text-gray-600 mb-6 max-w-md">Facades, Shops, Pavilions, and Kiosks for Carnivals. Experience the world's cultures in one extraordinary destination.</p>
+          <p class=" mb-6 max-w-md">Facades, Shops, Pavilions, and Kiosks for Carnivals. Experience the world's cultures in one extraordinary destination.</p>
           <div class="mb-6">
             <div class="flex items-center space-x-2 mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
               <span class="text-sm font-semibold">Event Dates</span>
             </div>
-            <p class="text-gray-700 text-sm mb-2">23rd October 2025 → 9th April 2026</p>
+            <p class= text-sm mb-2">From May 10, 2026 to September 5, 2026</p>
             <a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span class="text-gray-700 text-sm">Carnival Jeddah, Next to Aziz Mall, Jeddah</span>
+              <span class= text-sm">Al Ruddaf Square Festival, OPP. AL RUDAL PARK TAIF, SAUDI ARABIA</span>
             </a>
           </div>
         </div>
@@ -180,22 +170,25 @@
           <div class="space-y-3">
             <div class="flex items-center space-x-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span class="text-gray-700 text-sm">M-09, Arabilla Building, Hor Al Anz East, Dubai - UAE</span>
+              <span class= text-sm">M-09, Arabilla Building, Hor Al Anz East, Dubai - UAE</span>
             </div>
             <div class="flex items-center space-x-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-              <a href="tel:+971503545972" class="text-gray-700 text-sm hover:text-blue-600">+971 50 354 5972</a>
+              <a href="tel:+971503545972" class= text-sm hover:text-blue-600">+971 50 354 5972</a>
             </div>
             <div class="flex items-center space-x-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-              <a href="mailto:info@globalcarnivaljeddah.com" class="text-gray-700 text-sm hover:text-blue-600">info@globalcarnivaljeddah.com</a>
+              <a href="mailto:info@globalcarnivaljeddah.com" class= text-sm hover:text-blue-600">info@globalcarnivaljeddah.com</a>
             </div>
             <div class="pt-4 border-t border-gray-200">
               <h4 class="text-sm font-semibold mb-2">Contact Team</h4>
               <div class="space-y-1">
-                <a href="tel:+971503545972" class="block text-sm text-gray-600 hover:text-blue-600">Anil: +971 50 354 5972</a>
-                <a href="tel:+971502755860" class="block text-sm text-gray-600 hover:text-blue-600">Srinu: +971 50 275 5860</a>
-                <a href="tel:+971554137686" class="block text-sm text-gray-600 hover:text-blue-600">Himanshu: +971 55 413 7686</a>
+                <a href="tel:+966568929072" class="block text-sm  hover:text-blue-600">Reda Hassan: +966 56 892 9072 / +971 50 336 0709</a>
+                <a href="tel:+966534835185" class="block text-sm  hover:text-blue-600">Hassan Bahy: +966 53 483 5185 / +971 50 796 5776</a>
+                <a href="tel:+966567000322" class="block text-sm  hover:text-blue-600">Ahmad Hassan +966 56 700 0322 / +971 52 144 4948</a>
+                <a href="tel:+971502755860" class="block text-sm  hover:text-blue-600">Srinu +966 56 4055267 / +971 50 2755860</a>
+                <a href="tel:+971554137686" class="block text-sm  hover:text-blue-600">Himanshu: +971 55 413 7686</a>
+                <a href="tel:+971503545972" class="block text-sm  hover:text-blue-600">Anil: +971 50 354 5972</a>
               </div>
             </div>
           </div>
@@ -214,10 +207,22 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
             </a>
           </div>
+          <br>
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="text-sm font-semibold mb-2">Organized by</h4>
+              <div class="space-y-1">
+              <a href="https://www.barakatexhibitions.com/" target="_blank" 
+                class="flex items-center gap-4">
+                <img src="images/RTOSH.png" class="h-32 object-contain" alt="RTOSH">
+              </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

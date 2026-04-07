@@ -71,7 +71,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 12rem;
 }
 
 .card-img-grid img {
@@ -79,6 +78,7 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
+    height: 12rem;
 }
 
 .card:hover .card-img-grid img {
@@ -87,7 +87,6 @@
 
 .card-content {
     padding: 0.5rem;
-    color: white;
 }
 
 /* ==================== SECTION HEADER (used in Discover section) ==================== */
@@ -117,7 +116,6 @@
 
 .section-header p {
     font-size: 1.125rem;
-    color: #4b5563;
     max-width: 48rem;
     margin: 0 auto;
 }
@@ -131,4 +129,16 @@
 
 .py-20 {
     padding: 1.5rem;
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #52eeeb, #23a6d5, #ffffff);
+  background-size: 400% 400%; 
+  animation: gradientBG 1s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

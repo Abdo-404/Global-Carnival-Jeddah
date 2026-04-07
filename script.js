@@ -204,15 +204,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    // ---------- 6. STICKY HEADER ----------
-    const header = document.getElementById('mainHeader');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('shadow-md', 'bg-white/95');
-        } else {
-            header.classList.remove('shadow-md', 'bg-white/95');
-        }
-    });
 
     // ---------- 7. WHATSAPP BUTTON ----------
     const whatsappBtn = document.getElementById('whatsappBtnFixed');

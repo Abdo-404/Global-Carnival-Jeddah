@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Global Carnival Jeddah - World in One Place</title>
+  <title>Al Ruddaf Square Festival</title>
   <!-- Google Fonts + Tailwind + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -14,17 +13,17 @@
 <body class="antialiased" style="font-family:'Oswald', system-ui, sans-serif">
 
 <!-- ==================== HEADER ==================== -->
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm" >
   <div class="container mx-auto px-4">
-    <div class="flex items-center justify-between h-16 lg:h-20">
-      <a class="flex items-center space-x-2" href="index.html">
-        <img alt="Global Carnival Jeddah Logo" class="w-40 h-8 lg:w-52 lg:h-10 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_4.png 1x, images/image_1.png 2x">
+    <div class="flex items-center justify-between">
+      <a class="flex" href="index.html">
+        <img alt="Al Ruddaf Square Festival Logo" class="w-40 object-contain" decoding="async" src="images/image_1.png" srcset="images/image_1.png 2x">
       </a>
       <nav class="hidden lg:flex items-center space-x-8">
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="about.html">About</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="overview.html">Overview</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="pavilion.html">Pavilion</a>
-        <a class="text-base font-medium transition-colors hover:text-blue-600 text-black" href="contactSection.html">Contact</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="about.html">About</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="overview.html">Overview</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="pavilion.html">Pavilion</a>
+        <a class="text-[20px] font-medium transition-colors hover:text-blue-600 text-black" href="contactSection.html">Contact</a>
       </nav>
       <div class="flex items-center space-x-4">
         <div class="relative text-black">
@@ -34,18 +33,10 @@
             <svg class="lucide lucide-chevron-down w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </button>
           <div id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
-            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+            <a href="#" data-lang="en" class="block px-4 py-2 text-sm hover:bg-gray-100">English</a>
+            <a href="#" data-lang="ar" class="block px-4 py-2 text-sm hover:bg-gray-100">العربية</a>
           </div>
         </div>
-        <a href="contactSection.html">
-          <span class="hidden sm:inline-flex">
-            <span class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
-              <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-              <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 font-medium text-white backdrop-blur-3xl">Contact Us</span>
-            </span>
-          </span>
-        </a>
         <button id="mobileMenuBtn" aria-label="Toggle mobile menu" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
         </button>
@@ -55,49 +46,48 @@
 </header>
 
 <!-- Mobile Navigation Overlay -->
-<div id="mobileNav" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
-  <button id="closeMobileNav" class="absolute top-4 right-4 text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+<div id="mobileNav" class="mobile-nav fixed top-0 right-0 w-64 bg-white/80 shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
+  <button id="closeMobileNav" class="absolute top-4 right-4 "><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
   <a class="text-lg font-medium hover:text-blue-600" href="about.html">About</a>
   <a class="text-lg font-medium hover:text-blue-600" href="overview.html">Overview</a>
   <a class="text-lg font-medium hover:text-blue-600" href="pavilion.html">Pavilion</a>
   <a class="text-lg font-medium hover:text-blue-600" href="contactSection.html">Contact</a>
 </div>
-
-  <main class="pt-16 lg:pt-20">
+<main class="pt-16 lg:pt-20 animated-gradient">
     <!-- Hero Section -->
     <section class="relative py-32 text-white">
       <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image:url('images/hero_image3.jpg')"></div>
       <div class="absolute inset-0 bg-black/30"></div>
       <div class="relative container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up">About Global Carnival Jeddah</h1>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up">About Al Ruddaf Square Festival</h1>
         <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-lg md:text-xl animate-fade-up" style="animation-delay: 0.1s;">
           <div class="flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-            <span>23rd October 2025 → 9th April 2026</span>
+            <span>From May 10, 2026 to September 5, 2026</span>
           </div>
           <div class="flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span>Carnival Jeddah, Next to Aziz Mall, Jeddah</span>
+            <span>Al Ruddaf Square Festival, OPP. AL RUDAL PARK TAIF</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Welcome Section (text + image) -->
-    <section class="py-20 bg-white">
+    <section class="py-20">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div class="animate-fade-left">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Welcome to Global Carnival Jeddah</h2>
-            <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
-              <p>Global Carnival Jeddah is a groundbreaking cultural extravaganza that brings the world's most vibrant traditions, flavors, and experiences to the heart of Saudi Arabia. This extraordinary event represents a fusion of global cultures, creating an immersive environment where visitors can explore, taste, and experience the richness of our diverse world.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Welcome to Al Ruddaf Square Festival</h2>
+            <div class="space-y-6 text-lg leading-relaxed">
+              <p>Al Ruddaf Square Festival is a groundbreaking cultural extravaganza that brings the world's most vibrant traditions, flavors, and experiences to the heart of Saudi Arabia. This extraordinary event represents a fusion of global cultures, creating an immersive environment where visitors can explore, taste, and experience the richness of our diverse world.</p>
               <p>Our carnival is more than just an event—it's a celebration of human creativity, cultural heritage, and global unity. Through meticulously crafted facades, authentic pavilions, cultural pavilions, and interactive experiences, we create a bridge between different cultures, fostering understanding and appreciation for the world's diversity.</p>
-              <p>From the bustling markets of Marrakech to the serene gardens of Kyoto, from the vibrant streets of Mumbai to the elegant boulevards of Paris, Global Carnival Jeddah offers an unparalleled journey around the world without leaving the Arabian Peninsula.</p>
+              <p>From the bustling markets of Marrakech to the serene gardens of Kyoto, from the vibrant streets of Mumbai to the elegant boulevards of Paris, Al Ruddaf Square Festival offers an unparalleled journey around the world without leaving the Arabian Peninsula.</p>
             </div>
           </div>
           <div class="relative animate-fade-right">
             <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img src="images/image_1.jpg" alt="Global Carnival Jeddah cultural celebration" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Cultural+Celebration'">
+              <img src="images/image_1.jpg" alt="Al Ruddaf Square Festival cultural celebration" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Cultural+Celebration'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
           </div>
@@ -106,11 +96,11 @@
     </section>
 
     <!-- Features: What Makes Us Special -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16 animate-fade-up">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Makes Us Special</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover the unique elements that make Global Carnival Jeddah an extraordinary cultural experience</p>
+          <p class="text-lg max-w-3xl mx-auto">Discover the unique elements that make Al Ruddaf Square Festival an extraordinary cultural experience</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Feature 1: Global Cultural Diversity -->
@@ -124,7 +114,7 @@
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-4">Global Cultural Diversity</h3>
-              <p class="text-gray-600 leading-relaxed">Experience authentic representations of cultures from every continent, each carefully curated to preserve their unique traditions and heritage.</p>
+              <p class= leading-relaxed">Experience authentic representations of cultures from every continent, each carefully curated to preserve their unique traditions and heritage.</p>
             </div>
           </div>
           <!-- Feature 2: Interactive Experiences -->
@@ -138,7 +128,7 @@
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-4">Interactive Experiences</h3>
-              <p class="text-gray-600 leading-relaxed">Engage with cultural ambassadors, participate in traditional activities, and create lasting memories through hands-on experiences.</p>
+              <p class= leading-relaxed">Engage with cultural ambassadors, participate in traditional activities, and create lasting memories through hands-on experiences.</p>
             </div>
           </div>
           <!-- Feature 3: Strategic Location -->
@@ -152,7 +142,7 @@
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-4">Strategic Location</h3>
-              <p class="text-gray-600 leading-relaxed">Located in the vibrant city of Jeddah, a gateway to the Middle East, making it accessible to visitors from around the world.</p>
+              <p class= leading-relaxed">Located in the vibrant city of Jeddah, a gateway to the Middle East, making it accessible to visitors from around the world.</p>
             </div>
           </div>
         </div>
@@ -160,27 +150,87 @@
     </section>
   </main>
 
-<!-- FOOTER with Newsletter -->
-<footer>
-  <div class="container mx-auto px-4 py-6">
-      <div class="flex flex-col items-center text-center">
-        <span class="text-gray-700 mb-2">Organized by</span>
-        <a href="https://www.barakatexhibitions.com/" target="_blank" 
-           class="flex items-center gap-4">
-          <img src="images/image.png" class="h-20 object-contain" alt="Organizer 1">
-          <img src="images/RTOSH.png" class="h-20 object-contain" alt="Organizer 2">
-        </a>
+
+  <!-- FOOTER (matching original design) -->
+  <footer class="text-gray-900 border-t border-gray-200">
+    <div class="container mx-auto px-10 py-6">
+      <div class="grid lg:grid-cols-3 gap-8 items-center justify-items-center">
+        <!-- Brand column -->
+        <div>
+          <a href="index.html" class="inline-block mb-4">
+            <img src="images/image_1.png" alt="Al Ruddaf Square Festival Logo" width="200" class="object-contain" onerror="this.src='https://placehold.co/150x60?text=Global+Carnival'">
+          </a>
+          <p class=" mb-6 max-w-md">Facades, Shops, Pavilions, and Kiosks for Carnivals. Experience the world's cultures in one extraordinary destination.</p>
+          <div class="mb-6">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+              <span class="text-sm font-semibold">Event Dates</span>
+            </div>
+            <p class= text-sm mb-2">From May 10, 2026 to September 5, 2026</p>
+            <a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class= text-sm">Al Ruddaf Square Festival, OPP. AL RUDAL PARK TAIF, SAUDI ARABIA</span>
+            </a>
+          </div>
+        </div>
+        <!-- Contact info column -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class= text-sm">M-09, Arabilla Building, Hor Al Anz East, Dubai - UAE</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+              <a href="tel:+971503545972" class= text-sm hover:text-blue-600">+971 50 354 5972</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              <a href="mailto:info@globalcarnivaljeddah.com" class= text-sm hover:text-blue-600">info@globalcarnivaljeddah.com</a>
+            </div>
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="text-sm font-semibold mb-2">Contact Team</h4>
+              <div class="space-y-1">
+                <a href="tel:+966568929072" class="block text-sm  hover:text-blue-600">Reda Hassan: +966 56 892 9072 / +971 50 336 0709</a>
+                <a href="tel:+966534835185" class="block text-sm  hover:text-blue-600">Hassan Bahy: +966 53 483 5185 / +971 50 796 5776</a>
+                <a href="tel:+966567000322" class="block text-sm  hover:text-blue-600">Ahmad Hassan +966 56 700 0322 / +971 52 144 4948</a>
+                <a href="tel:+971502755860" class="block text-sm  hover:text-blue-600">Srinu +966 56 4055267 / +971 50 2755860</a>
+                <a href="tel:+971554137686" class="block text-sm  hover:text-blue-600">Himanshu: +971 55 413 7686</a>
+                <a href="tel:+971503545972" class="block text-sm  hover:text-blue-600">Anil: +971 50 354 5972</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social & organized by -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=61579708906500" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/global_carnival_jeddah/" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-pink-500 hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCqpbvpvH_b-9-gHRSvEvdqg" target="_blank" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+            </a>
+          </div>
+          <br>
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="text-sm font-semibold mb-2">Organized by</h4>
+              <div class="space-y-1">
+              <a href="https://www.barakatexhibitions.com/" target="_blank" 
+                class="flex items-center gap-4">
+                <img src="images/RTOSH.png" class="h-32 object-contain" alt="RTOSH">
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-  
-<button id="floatingContactBtn" class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2">
-  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
-  </svg>
-  <span class="hidden sm:inline">Contact Us</span>
-</button>
+  </footer>
 
 <script src="script.js"></script>
 </body>
