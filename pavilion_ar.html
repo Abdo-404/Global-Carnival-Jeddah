@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -54,22 +54,13 @@
   <a class="text-lg font-medium hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
 </div>
 <main class="pt-16 lg:pt-20 animated-gradient">
-    <!-- Hero Section with Video Background -->
+    <!-- Hero Section with Video Background -->    
     <section class="relative py-32 text-white overflow-hidden">
-      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image:url('images/og-image.jpg')"></div>
-    </section>
-    <br>
-    <section class="relative py-32 mx-auto overflow-hidden">
-      <div class="absolute inset-0 flex justify-center items-center">
-        <div class="w-[600px] h-[600px] bg-sky-400 rounded-full blur-3xl opacity-50"></div>
-      </div>
-      <div class="relative z-10 text-center">
-        <h1 class="text-4xl md:text-6xl max-w-4xl mx-auto font-bold mb-6 text-gray-900 animate-fade-up">
-          استمتع بأجنحة من جميع أنحاء العالم
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-900 max-w-4xl mx-auto animate-fade-up" style="animation-delay: 0.1s;">
-          يمثل كل جناح الثقافة والتقاليد الأصيلة لمنطقته، مما يوفر للزوار تجربة غامرة حقاً.
-        </p>
+      <video class="absolute inset-0 w-full h-full object-cover" src="allpavillion.mp4" autoplay loop muted playsinline></video>
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up"> استمتع بأجنحة من جميع أنحاء العالم</h1>
+        <p class="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto animate-fade-up" style="animation-delay: 0.1s;"> يمثل كل جناح الثقافة والتقاليد الأصيلة لمنطقته، مما يوفر للزوار تجربة غامرة حقاً.</p>
       </div>
     </section>
 
@@ -168,7 +159,7 @@
 
 
   <!-- FOOTER (matching original design) -->
-  <footer class="text-gray-900 border-t border-gray-200">
+  <footer class="text-gray-900 border-t border-gray-200 font-bold">
     <div class="container mx-auto px-10 py-6">
       <div class="grid lg:grid-cols-3 gap-8 items-center justify-items-center">
         <!-- Brand column -->
@@ -176,46 +167,16 @@
           <a href="index_ar.html" class="inline-block mb-4">
             <img src="images/image_1.png" alt="شعار مهرجان ساحة الرضف" width="200" class="object-contain" onerror="this.src='https://placehold.co/150x60?text=Global+Carnival'">
           </a>
-          <p class="mb-6 max-w-md">واجهات، متاجر، أجنحة، وأكشاك الكرنفالات. اكتشف ثقافات العالم في وجهة استثنائية واحدة.</p>
+          <p class=" mb-6 max-w-md">واجهات، متاجر، أجنحة، وأكشاك للكرنفالات. اكتشف ثقافات العالم في وجهة استثنائية واحدة.</p>
           <div class="mb-6">
             <div class="flex items-center space-x-2 mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-              <span class="text-sm font-semibold">تواريخ الفعالية</span>
+              <p>من 10 مايو 2026 إلى 5 سبتمبر 2026</p>
             </div>
-            <p class="text-sm mb-2">من 10 مايو 2026 إلى 5 سبتمبر 2026</p>
             <a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span class="text-sm">مهرجان ساحة الرضف، مقابل حديقة الرضف – الطائف، المملكة العربية السعودية</span>
+              <p>مهرجان ساحة الرضف، مقابل حديقة الرضف - الطائف</p>
             </a>
-          </div>
-        </div>
-        <!-- Contact info column -->
-        <div>
-          <h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3>
-          <div class="space-y-3">
-            <div class="flex items-center space-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span class="text-sm">م-09، مبنى عربيالة، هور العنز شرق، دبي – الإمارات العربية المتحدة</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-              <a href="tel:+971503545972" class="text-sm hover:text-blue-600">+971 50 354 5972</a>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-              <a href="mailto:info@globalcarnivaljeddah.com" class="text-sm hover:text-blue-600">info@globalcarnivaljeddah.com</a>
-            </div>
-            <div class="pt-4 border-t border-gray-200">
-              <h4 class="text-sm font-semibold mb-2">فريق الاتصال</h4>
-              <div class="space-y-1">
-                <a href="tel:+966568929072" class="block text-sm hover:text-blue-600">رضا حسن: +966 56 892 9072 / +971 50 336 0709</a>
-                <a href="tel:+966534835185" class="block text-sm hover:text-blue-600">حسن بحي: +966 53 483 5185 / +971 50 796 5776</a>
-                <a href="tel:+966567000322" class="block text-sm hover:text-blue-600">أحمد حسن: +966 56 700 0322 / +971 52 144 4948</a>
-                <a href="tel:+971502755860" class="block text-sm hover:text-blue-600">سرينو: +966 56 4055267 / +971 50 2755860</a>
-                <a href="tel:+971554137686" class="block text-sm hover:text-blue-600">هيمانيشو: +971 55 413 7686</a>
-                <a href="tel:+971503545972" class="block text-sm hover:text-blue-600">أنيل: +971 50 354 5972</a>
-              </div>
-            </div>
           </div>
         </div>
         <!-- Social & organized by -->
@@ -233,13 +194,39 @@
             </a>
           </div>
           <br>
-            <div class="pt-4 border-t border-gray-200">
-              <h4 class="text-sm font-semibold mb-2">تنظيم</h4>
+          <div class="pt-4 space-y-3 border-t border-gray-200">
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <p>مبنى عربيالة، هور العنز شرق، دبي - الإمارات العربية المتحدة</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+              <a href="tel:+971503545972" class= "hover:text-blue-600">+971 50 354 5972</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              <a href="mailto:info@globalcarnivaljeddah.com" class= "hover:text-blue-600">info@globalcarnivaljeddah.com</a>
+            </div>
+          </div>
+        </div>
+        <!-- Contact info column -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3>
+          <div class="space-y-3">
+            <div>
               <div class="space-y-1">
-              <a href="https://www.barakatexhibitions.com/" target="_blank" 
-                class="flex items-center gap-4">
-                <img src="images/RTOSH.png" class="h-32 object-contain" alt="RTOSH">
-              </a>
+                <a>رضا حسن</a>
+                <a href="tel:+966568929072" class="block hover:text-blue-600">+966 56 892 9072 / +971 50 336 0709</a>
+                <a>حسن بحي</a>
+                <a href="tel:+966534835185" class="block hover:text-blue-600">+966 53 483 5185 / +971 50 796 5776</a>
+                <a>أحمد حسن</a>
+                <a href="tel:+966567000322" class="block hover:text-blue-600">+966 56 700 0322 / +971 52 144 4948</a>
+                <a>سرينو</a>
+                <a href="tel:+971502755860" class="block hover:text-blue-600">+966 56 4055267 / +971 50 2755860</a>
+                <a>هيمانيشو</a>
+                <a href="tel:+971554137686" class="block hover:text-blue-600">+971 55 413 7686</a>
+                <a>أنيل</a>
+                <a href="tel:+971503545972" class="block hover:text-blue-600">+971 50 354 5972</a>
               </div>
             </div>
           </div>
@@ -247,7 +234,7 @@
       </div>
     </div>
   </footer>
-
+  
 <script src="script.js"></script>
 </body>
 </html>

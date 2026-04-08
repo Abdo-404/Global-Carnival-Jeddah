@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -48,16 +48,16 @@
 <!-- Mobile Navigation Overlay -->
 <div id="mobileNav" class="mobile-nav fixed top-0 right-0 w-64 bg-white/80 shadow-2xl z-[60] lg:hidden p-6 pt-20 flex flex-col space-y-6">
   <button id="closeMobileNav" class="absolute top-4 right-4 "><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
-  <a class="text-lg font-medium hover:text-blue-600" href="about_ar.html">عن المهرجان</a>
-  <a class="text-lg font-medium hover:text-blue-600" href="overview_ar.html">نظرة عامة</a>
-  <a class="text-lg font-medium hover:text-blue-600" href="pavilion_ar.html">الجناح</a>
-  <a class="text-lg font-medium hover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
+  <a class="text-lg fonthover:text-blue-600" href="about_ar.html">عن المهرجان</a>
+  <a class="text-lg fonthover:text-blue-600" href="overview_ar.html">نظرة عامة</a>
+  <a class="text-lg fonthover:text-blue-600" href="pavilion_ar.html">الجناح</a>
+  <a class="text-lg fonthover:text-blue-600" href="contactSection_ar.html">اتصل بنا</a>
 </div>
-<main class="pt-16 lg:pt-20 animated-gradient">
+<main class="pt-16 lg:pt-20">
   <!-- HERO SECTION with slideshow -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden" id="heroSection">
     <div class="absolute inset-0 z-0" id="heroSlidesContainer">
-      <div class="absolute z-10 inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/70 pointer-events-none"></div>
+      <div class="absolute z-10 inset-0 pointer-events-none"></div>
       <div class="relative w-full h-screen bg-black">
         <!-- JS injects slides here -->
       </div>
@@ -71,17 +71,16 @@
         <h2 class="text-xl md:text-2xl lg:text-3xl font-medium mb-6 text-gray-200 reveal-on-scroll">اكتشف العالم في مكان واحد</h2>
         <div class="mb-8 reveal-on-scroll"><a href="overview_ar.html" class="inline-flex bg-blue-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-400 transition">استكشف الكرنفال</a></div>
         <div class="flex justify-center mb-8">
-          <div class="space-y-2 backdrop-blur bg-black/50 border border-white/20 rounded-xl px-4 py-3">
+          <div class="space-y-2 backdrop-blur bg-white/50 border border-white/20 rounded-xl px-4 py-3">
             <div class="flex flex-col items-center space-y-2">
-              <p class="text-gray-200 text-sm">تنظيم</p>
               <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center">
-                <img src="images/RTOSH.png" class="h-32">
+                <img src="images/image_1.png" class="h-32">
               </a>
             </div>
-            <div class="flex flex-col md:flex-row items-center gap-2 text-gray-200">
+            <div class="flex flex-col md:flex-row items-center gap-2 text-gray-800">
               <div class="flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" rx="2" x="3" y="4"/><path d="M3 10h18"/></svg>
-                <span>من 10 مايو 2026 إلى 5 سبتمبر 2026</span>
+                <p>من 10 مايو 2026 إلى 5 سبتمبر 2026</p>
               </div>
               <span class="hidden md:inline-block w-px h-6 bg-white/30"></span>
               <div class="flex items-center space-x-2">
@@ -89,7 +88,7 @@
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
-                <span>مهرجان ساحة الرضف، مقابل حديقة الرضف – الطائف، المملكة العربية السعودية</span>
+                <p>مهرجان ساحة الرضف، مقابل حديقة الرضف - الطائف</p>
               </div>
             </div>
           </div>
@@ -112,9 +111,8 @@
             <p>من أسواق مراكش الصاخبة إلى حدائق كيوتو الهادئة، ومن شوارع مومباي النابضة بالحياة إلى شوارع باريس الأنيقة، يقدم مهرجان ساحة الرضف رحلة استثنائية حول العالم دون مغادرة شبه الجزيرة العربية.</p>
           </div>
           <div class="mt-8 pt-6 border-t border-gray-200">
-            <p class="text-sm mb-3">تنظيم</p>
             <a href="https://www.barakatexhibitions.com/" target="_blank" class="flex items-center gap-2">
-                <img src="images/RTOSH.png" class="h-32">
+                <img src="images/image_1.png" class="h-32">
             </a>
           </div>
         </div>
@@ -132,7 +130,7 @@
   </section>
 
   <!-- HIGHLIGHTS CAROUSEL -->
-  <section class="py-20 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" id="overview">
+  <section class="py-20" id="overview">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16"><h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 reveal-on-scroll">أبرز معالم الكرنفال</h2><p class="text-lg md:text-xl max-w-3xl mx-auto reveal-on-scroll">اكتشف المعالم الرئيسية التي تجعل مهرجان ساحة الرضف تجربة استثنائية.</p></div>
       <div class="relative max-w-4xl mx-auto" id="highlightsCarousel">
@@ -140,6 +138,48 @@
         <button id="prevHighlight" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg"><svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
         <button id="nextHighlight" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg"><svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
         <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2" id="highlightDots"></div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20" id="overview">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16"><h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 reveal-on-scroll">Organized by</h2></div>
+      <div class="relative max-w-4xl mx-auto" id="highlightsCarousel">
+        <div class="contain">
+          <!-- Card 1 -->
+          <div class="carded"> 
+            <div class="face face--front border border-black/20 rounded-xl">
+              <img src="images/SHAMS.png" alt="شمس البركات">
+            </div>
+            <div class="face face--back bg-gray-100">
+              <h1 class="text-xl mb-6 font-bold">
+                شركة شمس البركات للمعارض ذ.م.م
+              </h1>
+              <p>
+                تُعد شركة شمس البركات للمعارض ذ.م.م من الشركات المتخصصة في تنظيم المعارض والفعاليات، 
+                ومقرها دبي في دولة الإمارات العربية المتحدة. تنشط الشركة في مختلف مدن الشرق الأوسط، 
+                بما في ذلك دبي وأبوظبي والعين (الإمارات)، والمدينة المنورة وجدة والرياض (المملكة العربية السعودية)، 
+                بالإضافة إلى مدينة الكويت (الكويت).
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="carded">
+            <div class="face face--front border border-black/20 rounded-xl">
+              <img src="images/RTOSH.png" alt="RTOSH">
+            </div>
+            <div class="face face--back bg-gray-100">
+              <h1 class="text-xl mb-6 font-bold">
+                شركة RTOSH لتنظيم المعارض ذ.م.م
+              </h1>
+              <p>
+                تأسست شركة RTOSH في عام 2023 في دبي، وهي شركة متخصصة في تنظيم وإدارة المعارض والفعاليات. 
+                تقدم الشركة حلولاً متكاملة تشمل التخطيط، والتسويق، وإدارة العمليات، لضمان تنفيذ فعاليات 
+                ناجحة ومتميزة.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -294,7 +334,7 @@
     <div class="container mx-auto px-4 relative z-10">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-white">لماذا تشارك مع مهرجان ساحة الرضف</h2>
-        <p class="text-white/80 mt-2">انضم إلينا في خلق تجربة الكرنفال الأكثر روعة</p>
+        <p class="text-white mt-2">انضم إلينا في خلق تجربة الكرنفال الأكثر روعة</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white/10 backdrop-blur-sm p-5 rounded-xl text-white">
@@ -355,7 +395,7 @@
 
 
   <!-- FOOTER (matching original design) -->
-  <footer class="text-gray-900 border-t border-gray-200">
+  <footer class="text-gray-900 border-t border-gray-200 font-bold">
     <div class="container mx-auto px-10 py-6">
       <div class="grid lg:grid-cols-3 gap-8 items-center justify-items-center">
         <!-- Brand column -->
@@ -367,42 +407,12 @@
           <div class="mb-6">
             <div class="flex items-center space-x-2 mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-              <span class="text-sm font-semibold">تواريخ الفعالية</span>
+              <p>من 10 مايو 2026 إلى 5 سبتمبر 2026</p>
             </div>
-            <p class= text-sm mb-2">من 10 مايو 2026 إلى 5 سبتمبر 2026</p>
             <a href="https://maps.app.goo.gl/yiNCMrCrTbgJ3fxd8" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span class= text-sm">مهرجان ساحة الرضف، مقابل حديقة الرضف – الطائف، المملكة العربية السعودية</span>
+              <p>مهرجان ساحة الرضف، مقابل حديقة الرضف - الطائف</p>
             </a>
-          </div>
-        </div>
-        <!-- Contact info column -->
-        <div>
-          <h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3>
-          <div class="space-y-3">
-            <div class="flex items-center space-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span class= text-sm">م-09، مبنى عربيالة، هور العنز شرق، دبي – الإمارات العربية المتحدة</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-              <a href="tel:+971503545972" class= text-sm hover:text-blue-600">+971 50 354 5972</a>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-              <a href="mailto:info@globalcarnivaljeddah.com" class= text-sm hover:text-blue-600">info@globalcarnivaljeddah.com</a>
-            </div>
-            <div class="pt-4 border-t border-gray-200">
-              <h4 class="text-sm font-semibold mb-2">فريق الاتصال</h4>
-              <div class="space-y-1">
-                <a href="tel:+966568929072" class="block text-sm  hover:text-blue-600">رضا حسن: +966 56 892 9072 / +971 50 336 0709</a>
-                <a href="tel:+966534835185" class="block text-sm  hover:text-blue-600">حسن بحي: +966 53 483 5185 / +971 50 796 5776</a>
-                <a href="tel:+966567000322" class="block text-sm  hover:text-blue-600">أحمد حسن: +966 56 700 0322 / +971 52 144 4948</a>
-                <a href="tel:+971502755860" class="block text-sm  hover:text-blue-600">سرينو: +966 56 4055267 / +971 50 2755860</a>
-                <a href="tel:+971554137686" class="block text-sm  hover:text-blue-600">هيمانيشو: +971 55 413 7686</a>
-                <a href="tel:+971503545972" class="block text-sm  hover:text-blue-600">أنيل: +971 50 354 5972</a>
-              </div>
-            </div>
           </div>
         </div>
         <!-- Social & organized by -->
@@ -420,13 +430,39 @@
             </a>
           </div>
           <br>
-            <div class="pt-4 border-t border-gray-200">
-              <h4 class="text-sm font-semibold mb-2">تنظيم</h4>
+          <div class="pt-4 space-y-3 border-t border-gray-200">
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <p>مبنى عربيالة، هور العنز شرق، دبي - الإمارات العربية المتحدة</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+              <a href="tel:+971567000322" class= "hover:text-blue-600">+971 56 700 0322</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              <a href="mailto:info@globalcarnivaljeddah.com" class= "hover:text-blue-600">info@globalcarnivaljeddah.com</a>
+            </div>
+          </div>
+        </div>
+        <!-- Contact info column -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">معلومات الاتصال</h3>
+          <div class="space-y-3">
+            <div>
               <div class="space-y-1">
-              <a href="https://www.barakatexhibitions.com/" target="_blank" 
-                class="flex items-center gap-4">
-                <img src="images/RTOSH.png" class="h-32 object-contain" alt="RTOSH">
-              </a>
+                <a>رضا حسن</a>
+                <a href="tel:+966568929072" class="block hover:text-blue-600">+966 56 892 9072 / +971 50 336 0709</a>
+                <a>حسن بحي</a>
+                <a href="tel:+966534835185" class="block hover:text-blue-600">+966 53 483 5185 / +971 50 796 5776</a>
+                <a>أحمد حسن</a>
+                <a href="tel:+966567000322" class="block hover:text-blue-600">+966 56 700 0322 / +971 52 144 4948</a>
+                <a>سرينو</a>
+                <a href="tel:+971502755860" class="block hover:text-blue-600">+966 56 4055267 / +971 50 2755860</a>
+                <a>هيمانيشو</a>
+                <a href="tel:+971554137686" class="block hover:text-blue-600">+971 55 413 7686</a>
+                <a>أنيل</a>
+                <a href="tel:+971503545972" class="block hover:text-blue-600">+971 50 354 5972</a>
               </div>
             </div>
           </div>
