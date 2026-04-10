@@ -156,7 +156,7 @@ p {
   position: relative;
   width: 100%;      /* take full width of container (90% of screen) */
   max-width: 400px; /* prevent it from becoming too huge */
-  height: 320px;
+  height: 350px;
   border-radius: 0.8rem;
   transform-style: preserve-3d;
 }
@@ -193,7 +193,7 @@ p {
 .face img {
   height: 80%;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   object-fit: contain;
 }
 
