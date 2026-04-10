@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const whatsappBtn = document.getElementById('whatsappBtnFixed');
     if (whatsappBtn) {
         whatsappBtn.addEventListener('click', () => {
-            window.open('https://wa.me/971503545972?text=Hello%20I%20want%20to%20know%20more%20about%20Global%20Carnival%20Jeddah', '_blank');
+            window.open('https://wa.me/966567000322', '_blank');
         });
     }
 
